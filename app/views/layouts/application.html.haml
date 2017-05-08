@@ -6,8 +6,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
+
     %body
-      %img.logo(src='http:////i.imgur.com/tjIk4XX.jpg')
+      %img.logo(src='/assets/instagif logo-3146178b67fadb3badfb29e71a6e55ccea997b845e03c2245605641d31d9e3c2.jpg')
       - if user_signed_in?
         %div.session_links
           = link_to "Sign out", destroy_user_session_path, class: 'session_btn', method: :delete
