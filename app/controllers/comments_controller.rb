@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to @gif }
-      format.js
     end
   end
 

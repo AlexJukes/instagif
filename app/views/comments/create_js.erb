@@ -1,3 +1,2 @@
-<!-- $('div#comments').InnerHtml("<%=render @comments %>"); -->
+$('#comments').InnerHtml("<%=j render @comments %>");
 
-$("<%= escape_javascript(render @comment) %>").appendTo("#comments");

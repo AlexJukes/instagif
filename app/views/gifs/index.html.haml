@@ -7,7 +7,7 @@
 
       %div.gif[gif]
         %div.gif_image
-          %a{href: "/gifs/#{gif.id}", id: "#{gif.id}"}
+          %a(href="/gifs/#{gif.id}")
             %img{src: "#{gif.url}", id:"#{gif.id}"}
         %div.gif_title
           %header

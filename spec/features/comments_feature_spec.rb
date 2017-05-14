@@ -5,7 +5,7 @@ feature 'reviewing' do
 
   scenario 'allows users to leave a comment on a gif using a form' do
     visit '/gifs'
-    click_link "##{cat_gif.id}"
+    click_link 'Cat'
     fill_in 'Comment', with: "Nice cat!"
     click_button 'Add Comment'
     expect(current_path).to eq "/gifs/#{cat_gif.id}"
